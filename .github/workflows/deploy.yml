@@ -29,11 +29,13 @@ jobs:
     - run: ng build --prod
 
     # Runs a set of commands using the runners shell
+    - uses: actions/checkout@v2
     - name: Run a multi-line script
-      run: |
-        mkdir ../build
-        cp -TR . ../build
-        tar -cvf deploy.tar ../build/
+    - run: mkdir ~/dist
+    - uses: actions/download-artifact@v2
+      with:
+        name: dist
+        path: dist
 
     - name: copy file via ssh key
       uses: appleboy/scp-action@master
@@ -43,6 +45,7 @@ jobs:
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
       with:
-        source: "deploy.tar"
+        rm: true
+        source: dist/*
         target: "/var/www/html/portfolio"
         strip_components: 3 # this is important
