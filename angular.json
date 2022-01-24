@@ -36,9 +36,9 @@
                         "scripts": [],
                         "vendorChunk": true,
                         "extractLicenses": false,
-                        "buildOptimizer": true,
+                        "buildOptimizer": false,
                         "sourceMap": true,
-                        "optimization": true,
+                        "optimization": false,
                         "namedChunks": true,
                         "allowedCommonJsDependencies": [
                             "tsparticles"
