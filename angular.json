@@ -36,10 +36,13 @@
                         "scripts": [],
                         "vendorChunk": true,
                         "extractLicenses": false,
-                        "buildOptimizer": false,
+                        "buildOptimizer": true,
                         "sourceMap": true,
-                        "optimization": false,
-                        "namedChunks": true
+                        "optimization": true,
+                        "namedChunks": true,
+                        "allowedCommonJsDependencies": [
+                            "tsparticles"
+                        ]
                     },
                     "configurations": {
                         "production": {
