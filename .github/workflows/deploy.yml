@@ -37,7 +37,7 @@ jobs:
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
       with:
-        # rm: true
+        rm: true
         source: dist/portfolio
         target: "/var/www/html/portfolio"
-        strip_components: 3 # this is important
+        strip_components: 2 # this is important
