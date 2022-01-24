@@ -40,6 +40,6 @@ jobs:
         KEY: ${{ secrets.SSHKEY }}
       with:
         rm: true
-        source: dist/*
+        source: dist/portfolio
         target: "/var/www/html/portfolio"
         strip_components: 3 # this is important
