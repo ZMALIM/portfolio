@@ -1,6 +1,32 @@
+.about {
+    z-index: 3;
+}
+.about .wave {
+    -webkit-transform: rotate(180deg) translateY(100%);
+    transform: rotate(180deg) translateY(100%);
+    top: 1px;
+}
+
 .img-iam {
-    width: 70%;
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');
+    background-size: cover;
+    display: block;
+    border-top-left-radius: 100px;
+    -webkit-border-top-left-radius: 100px;
+    -moz-border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    -webkit-border-bottom-right-radius: 100px;
+    -moz-border-bottom-right-radius: 100px;
+}
+
+.img-pic {
+    border-radius: 50% 50% 50% 50%;
+    background-size: cover;
+    display: block;
+    height: 60%;
+    width: 60%;
 }
 
 .skills {

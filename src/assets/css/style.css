@@ -1231,8 +1231,27 @@ b {
     background-color: #fafbfe !important;
 }
 
+.bg-gray {
+    background: #f7f7f7 !important;
+}
+
 .bg-soft-light {
     background-color: rgba(250, 251, 254, 0.1) !important;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -1px;
+    fill: #fff;
+}
+.wave.dark {
+    fill: #0f0f0f;
+}
+
+.wave.gray {
+    fill: #f7f7f7 !important;
 }
 
 .text-light {
@@ -1813,8 +1832,8 @@ textarea.form-control {
 }
 
 .social .social-icon {
-    border: 2px solid #868e96;
-    border-radius: 50%;
+    /* border: 2px solid #868e96;
+    border-radius: 50%; */
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     width: 42px;

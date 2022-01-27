@@ -10,7 +10,10 @@ textarea.form-control {
     box-shadow: none !important;
     height: 50px;
     padding-left: 20px;
-    border: 1px solid #e0e0e0;
+    // border: 1px solid #e0e0e0;
+    border: none !important;
+    background: #f7f7f7 !important;
+    border-radius: 30px;
     font-size: 14px;
     &:focus {
         border-color: #ccc;
@@ -40,4 +43,11 @@ textarea.form-control {
     .contact-title {
         font-size: 20px;
     }
+}
+
+.label-c {
+    // color: #c49b66;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }

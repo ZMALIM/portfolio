@@ -13,16 +13,33 @@
         <!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" /> -->
 
         <!-- Plugins -->
-        <link rel="stylesheet" href="assets/css/plugins.css" />
+        <link rel="stylesheet" href="assets/css/plugins.css" type="text/css" />
 
         <!-- Core Style Css -->
         <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+        <!-- Color Scheme Css -->
         <link rel="stylesheet" type="text/css" href="assets/css/colors/purple.css" id="color-opt" />
 
     </head>
 
     <body>
-        <app-root></app-root>
-    </body>
 
+        <app-root>
+            <div class="spinner-wrapper">
+                <div id="loader">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="loading"></div>
+                </div>
+            </div>
+        </app-root>
+
+    </body>
 </html>
