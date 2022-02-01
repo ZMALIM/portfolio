@@ -35,12 +35,19 @@
                     <a [ngxScrollTo]="'#contact'" class="nav-link" href="javascript: void(0);">Contacto</a>
                 </li>
             </ul>
-            <div>
-                <ul class="text-right list-unstyled list-inline mb-0 nav-social">
-                    <li class="list-inline-item text-white nav-number"><i class="ti-mobile"></i> <span>+51 959 034
-                            122</span></li>
-                    <!-- <li class="list-inline-item"><a href="" class="facebook"><i class="ti-facebook"></i></a></li> -->
-                </ul>
+            <div class="row aux">
+                <div class="col-10 phone fx-center">
+                    <ul class="text-right list-unstyled list-inline mb-0 nav-social">
+                        <li class="list-inline-item text-white nav-number">
+                            <i class="ti-mobile"></i>
+                            <span>+51 959 034 122</span>
+                        </li>
+                        <!-- <li class="list-inline-item"><a href="" class="facebook"><i class="ti-facebook"></i></a></li> -->
+                    </ul>
+                </div>
+                <div class="col-2 fx-center">
+                    <theme-switcher></theme-switcher>
+                </div>
             </div>
         </div>
     </div>

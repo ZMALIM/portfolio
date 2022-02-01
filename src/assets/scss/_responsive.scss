@@ -9,8 +9,23 @@
         box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
         color: $white !important;
         background: $dark;
+
+        .aux {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .phone {
+            display: none;
+        }
         .navbar-nav {
             margin-left: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
             li {
                 &.active {
                     border-color: transparent;

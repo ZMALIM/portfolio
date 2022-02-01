@@ -1,0 +1,16 @@
+.switcher {
+    font-size: 30px !important;
+    text-align: center;
+
+    .switch-icon {
+        cursor: pointer;
+
+        .icofont-night {
+            color: lightblue;
+        }
+
+        .icofont-sun-alt {
+            color: yellow;
+        }
+    }
+}

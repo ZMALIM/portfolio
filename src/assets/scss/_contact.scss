@@ -12,10 +12,11 @@ textarea.form-control {
     padding-left: 20px;
     // border: 1px solid #e0e0e0;
     border: none !important;
-    background: #f7f7f7 !important;
+    background: #f7f7f7;
     border-radius: 30px;
     font-size: 14px;
     &:focus {
+        background-color: #f7f7f7;
         border-color: #ccc;
     }
 }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { NgxTypedJsModule } from 'ngx-typed-js';
@@ -15,6 +16,7 @@ import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { SwitcherComponent } from './switcher/switcher.component';
+import { ThemeSwitcherComponent } from './theme-switcher/theme-switcher.component';
 import { ScrollspyDirective } from './scrollspy.directive';
 
 @NgModule({
@@ -29,10 +31,12 @@ import { ScrollspyDirective } from './scrollspy.directive';
         ContactComponent,
         FooterComponent,
         SwitcherComponent,
+        ThemeSwitcherComponent,
         ScrollspyDirective
     ],
     imports: [
         CommonModule,
+        FormsModule,
         CarouselModule,
         NgxTypedJsModule,
         ScrollToModule.forRoot()
@@ -48,6 +52,7 @@ import { ScrollspyDirective } from './scrollspy.directive';
         ContactComponent,
         FooterComponent,
         SwitcherComponent,
+        ThemeSwitcherComponent,
         ScrollspyDirective
     ]
 })
