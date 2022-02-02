@@ -10,7 +10,7 @@
 .navbar-custom.navbar-light .navbar-nav li a:hover,
 .navbar-custom.navbar-light .navbar-nav li a:focus,
 .navbar-custom.navbar-light .navbar-nav li a:active{
-    color: #31b164 !important;
+    color: #FFDD1B !important;
 }
 
 
@@ -20,13 +20,13 @@
 .team-social li a:hover,
 .contact-border,
 .back-to-top:hover {
-    background-color: #31b164 !important;
+    background-color: #FFDD1B !important;
 }
 
 .btn-primary,
 .registration-input-box:focus,
 .form-control:focus,.team-social li a:hover  {
-    border-color: #31b164;
+    border-color: #FFDD1B;
 }
 
 .btn-primary:hover,

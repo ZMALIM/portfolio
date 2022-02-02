@@ -25,12 +25,17 @@
 
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Mulish:wght@400;600;700&display=swap"); */
 
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+
+/* #31b164 */
+
+/* @font-face {
     font-family: "Victor Mono";
     src: url("../fonts/victor-mono/victor-mono-regular.ttf") format("truetype");
     font-weight: normal;
-    font-style: normal;
-}
+    font-style: normal, italic, oblique;
+    font-variant-ligatures: common-ligatures;
+} */
 
 body {
     font-family: "Victor Mono", monospace;
@@ -38,14 +43,14 @@ body {
     position: relative;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Victor Mono", monospace;
-}
+    font-family: "Barlow Condensed", monospace;
+} */
 
 .btn,
 .btn:focus,
@@ -376,7 +381,7 @@ b {
 }
 
 .bg-success {
-    background-color: #31b164 !important;
+    background-color: #FFDD1B !important;
 }
 
 .bg-soft-success {
@@ -384,21 +389,21 @@ b {
 }
 
 .text-success {
-    color: #31b164 !important;
+    color: #FFDD1B !important;
 }
 
 .border-success {
-    color: #31b164 !important;
+    color: #FFDD1B !important;
 }
 
 .icon-dual-success {
-    color: #31b164;
+    color: #FFDD1B;
     fill: rgba(49, 177, 100, 0.2);
 }
 
 .btn-soft-success {
     background-color: rgba(49, 177, 100, 0.25) !important;
-    color: #31b164 !important;
+    color: #FFDD1B !important;
 }
 
 .btn-soft-success:hover,
@@ -413,8 +418,8 @@ b {
 }
 
 .btn-success {
-    background: #31b164;
-    border-color: #31b164;
+    background: #FFDD1B;
+    border-color: #FFDD1B;
 }
 
 .btn-success:hover,
@@ -430,8 +435,8 @@ b {
 }
 
 .btn-outline-success {
-    color: #31b164;
-    border-color: #31b164;
+    color: #FFDD1B;
+    border-color: #FFDD1B;
 }
 
 .btn-outline-success:hover,
@@ -442,8 +447,8 @@ b {
 .btn-outline-success:not(:disabled):not(.disabled):active,
 .btn-outline-success:not(:disabled):not(.disabled):active:focus,
 .btn-outline-success .open > .dropdown-toggle.btn-primary {
-    background: #31b164;
-    border-color: #31b164;
+    background: #FFDD1B;
+    border-color: #FFDD1B;
 }
 
 .bg-info {
@@ -1381,7 +1386,7 @@ b {
 
 .navbar-custom .navbar-brand {
     color: #ffffff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .sticky-wrapper {
@@ -1975,7 +1980,7 @@ ul.pattern .color3 {
 }
 
 ul.pattern .color4 {
-    background-color: #31b164;
+    background-color: #FFDD1B;
 }
 
 ul.pattern .color5 {

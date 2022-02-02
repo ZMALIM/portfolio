@@ -6,11 +6,19 @@
         cursor: pointer;
 
         .icofont-night {
-            color: lightblue;
+            color: #fff;
+
+            &:hover {
+                color: #FFDD1B;
+            }
         }
 
         .icofont-sun-alt {
-            color: yellow;
+            color: #FFDD1B;
+
+            &:hover {
+                color: #fff;
+            }
         }
     }
 }
