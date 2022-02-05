@@ -30,36 +30,60 @@
             </div>
             <div class="col-lg-8">
                 <div class="custom-form mt-4 pt-4">
-                    <form method="post" name="myForm" onsubmit="return validateForm()">
-                        <p id="error-msg"></p>
-                        <div id="simple-msg"></div>
+                    <div *ngIf="submitted && success" class="alert alert-primary" role="alert">
+                        Correo enviado correctamente
+                    </div>
+                    <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm)" novalidate>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group mt-2">
-                                    <input name="name" id="name" required type="text" class="form-control"
-                                        placeholder="Nombres y apellidos">
+                                    <input type="text"
+                                        class="form-control"
+                                        placeholder="Nombres y apellidos"
+                                        formControlName="fullName"
+                                        [ngClass]="{ 'is-invalid': submitted && form.fullName.errors }"
+                                        required>
+                                        <!-- <div *ngIf="submitted && form.fullName.errors" class="invalid-feedback">
+                                            <div *ngIf="form.fullName.errors.required">Nombres y apellidos es requerido.</div>
+                                        </div> -->
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group mt-2">
-                                    <input name="email" id="email" required type="email" class="form-control"
-                                        placeholder="Correo electrónico">
+                                    <input type="email"
+                                        class="form-control"
+                                        placeholder="Correo electrónico"
+                                        formControlName="email"
+                                        [ngClass]="{ 'is-invalid': submitted && form.email.errors }"
+                                        required>
+                                        <span class="valid-feedback" *ngIf="contactForm.get('email').invalid && (contactForm.get('email').dirty || contactForm.get('email').touched)">
+                                            Please provide a valid email address
+                                        </span>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group mt-2">
-                                    <input type="text" required class="form-control" id="subject"
-                                        placeholder="Asunto" />
+                                    <input type="text"
+                                        class="form-control"
+                                        formControlName="subject"
+                                        placeholder="Asunto"
+                                        [ngClass]="{ 'is-invalid': submitted && form.subject.errors }"
+                                        required/>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group mt-2">
-                                    <textarea name="comments" id="comments" rows="4" class="form-control"
-                                        placeholder="Mensaje"></textarea>
+                                    <textarea rows="4"
+                                        class="form-control"
+                                        placeholder="Mensaje"
+                                        formControlName="message"
+                                        [ngClass]="{ 'is-invalid': submitted && form.message.errors }"
+                                        required>
+                                    </textarea>
                                 </div>
                             </div>
                         </div>
@@ -70,8 +94,10 @@
                                     <a href="#" class="btn btn-outline-white btn-round">Read More</a>
                                 </div> -->
 
-                                <input type="submit" id="submit" name="send" class="submitBnt btn btn-success btn-round"
-                                    value="Enviar Mensaje">
+                                <input type="submit"
+                                    class="submitBnt btn btn-success btn-round"
+                                    value="Enviar Mensaje"
+                                    [disabled]="loading">
                                 <div id="simple-msg"></div>
                             </div>
                         </div>

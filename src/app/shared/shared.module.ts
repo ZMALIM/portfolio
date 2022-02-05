@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { NgxTypedJsModule } from 'ngx-typed-js';
@@ -36,7 +37,9 @@ import { ScrollspyDirective } from './scrollspy.directive';
     ],
     imports: [
         CommonModule,
+        HttpClientModule,
         FormsModule,
+        ReactiveFormsModule,
         CarouselModule,
         NgxTypedJsModule,
         ScrollToModule.forRoot()
