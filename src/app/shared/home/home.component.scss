@@ -3,20 +3,36 @@
     padding: 10px 20px;
     border-radius: 30px;
     background-color: rgba(200, 200, 200, 0.05);
+
+    a {
+        padding: 0 15px;
+        font-size: 18px;
+        color: white;
+
+        &:hover {
+            .icofont-social-facebook {
+                color: #3b5997;
+            }
+
+            .icofont-social-whatsapp {
+                color: #4dc247;
+            }
+
+            .icofont-social-instagram {
+                color: #125688;
+            }
+
+            .icofont-brand-linkedin {
+                color: #0073b2;
+            }
+        }
+    }
 }
 
-.social a {
-    padding: 0 15px;
-    font-size: 18px;
-}
 
-a {
-    color: white;
-}
-
-a:hover {
-    color: #FFDD1B !important;
-}
+// a:hover {
+//     color: #FFDD1B !important;
+// }
 
 .iam-dev {
     margin: 0px 12px 12px 0px;
