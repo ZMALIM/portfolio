@@ -10,13 +10,17 @@
         .iam {
             width: 100%;
             height: 100%;
+            position: relative;
             border-radius: 50%;
-            background-image: url("/assets/images/iam-3.jpg"),
-                linear-gradient(to bottom, #efe8f5, #8845e0);
-            background-color: black;
+            background-image: url("/assets/images/iam.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+            filter: drop-shadow(5px 0 0 white)
+                drop-shadow(0 5px 0 white)
+                drop-shadow(-5px 0 0 white)
+                drop-shadow(0 -5px 0 white);
         }
 
         .paper {
