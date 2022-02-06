@@ -29,7 +29,7 @@ $sites: (
             }
 
             .icofont {
-                color: $color;
+                color: #6c757d;
             }
         }
     }
@@ -52,10 +52,6 @@ $sites: (
     font-size: 0;
     text-align: center;
 
-    a {
-        color: inherit !important;
-    }
-
     .social-icon {
         @extend %social-icon-inactive;
         @extend .animate;
@@ -77,14 +73,14 @@ $sites: (
             content: "";
             width: 120%;
             height: 120%;
-            z-index: -1;
             position: absolute;
+            z-index: -1;
             transform: rotate(45deg);
         }
 
         .icofont {
             @extend .animate;
-            font-size: 20px;
+            // font-size: 20px;
             font-weight: bold;
             vertical-align: middle;
         }

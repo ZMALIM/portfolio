@@ -1,3 +1,10 @@
+$sites: (
+    "facebook": #3b5998,
+    "instagram": #125688,
+    "whatsapp": #4dc247,
+    "linkedin": #007bb5
+);
+
 .social {
     display: inline-block;
     padding: 10px 20px;
@@ -7,23 +14,13 @@
     a {
         padding: 0 15px;
         font-size: 18px;
-        color: white;
+        color: #6c757d;
 
         &:hover {
-            .icofont-social-facebook {
-                color: #3b5997;
-            }
-
-            .icofont-social-whatsapp {
-                color: #4dc247;
-            }
-
-            .icofont-social-instagram {
-                color: #125688;
-            }
-
-            .icofont-brand-linkedin {
-                color: #0073b2;
+            @each $name, $color in $sites {
+                .icofont-#{$name} {
+                    color: $color
+                }
             }
         }
     }
