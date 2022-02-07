@@ -4,12 +4,13 @@
 
 .navbar-custom {
     font-family: "Oswald", sans-serif;
-    padding: 20px 0px;
+    padding: 0px 0px !important;
     width: 100%;
     border-radius: 0px;
     z-index: 999;
     margin-bottom: 0px;
     transition: all 0.5s ease-in-out;
+
     .nav-social {
         li {
             a {
@@ -36,6 +37,7 @@
             }
         }
     }
+
     .navbar-nav {
         margin-left: 50px;
         li {
@@ -49,10 +51,48 @@
                 letter-spacing: 0.05em;
             }
         }
+
+        .nav-item {
+            display: block;
+            padding: 20px 10px;
+            cursor: pointer;
+
+            .nav-icon {
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &:hover,
+            &.active {
+                background: #cdb30c;
+
+                a {
+                    color: $white;
+                }
+
+                .nav-icon {
+                    color: $white;
+                }
+            }
+        }
     }
+
     .navbar-brand {
         color: $white;
-        // text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        text-transform: uppercase;
+
+        .navbar-brand-img {
+            width: 50px;
+            margin: 0 6px 8px 0;
+            border-radius: 50%;
+        }
     }
 }
 
@@ -65,12 +105,6 @@
     margin-top: 5px;
     margin-bottom: 0px;
     color: $dark;
-}
-
-.navbar-custom .navbar-nav li.active a,
-.navbar-custom .navbar-nav li a:hover,
-.navbar-custom .navbar-nav li a:active {
-    color: $white;
 }
 
 .navbar-toggle {

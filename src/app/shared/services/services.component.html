@@ -12,13 +12,13 @@
         </div>
         <div class="row mt-5">
             <div class="col-md-4" *ngFor="let item of servicesData">
-                <div class="services-box th-primary">
-                    <div class="services-icon">
+                <div class="card-box th-primary">
+                    <div class="card-icon">
                         <i :class="icon icofont {{item.icon}}"></i>
                     </div>
                     <div class="mt-3">
-                        <h5 class="services-title fw-bold mb-3"><em>{{item.title}}</em></h5>
-                        <p class="services-subtitle txt-primary">{{item.description}}</p>
+                        <h5 class="card-title fw-bold mb-3"><em>{{item.title}}</em></h5>
+                        <p class="card-subtitle txt-primary">{{item.description}}</p>
                     </div>
                 </div>
             </div>

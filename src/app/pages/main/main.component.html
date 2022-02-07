@@ -4,8 +4,8 @@
     <div class="container">
 
         <a class="navbar-brand text-white fw-bold" href="#">
-            <img class="iam-dev" src="assets/images/icons/boy.png" alt="Developer">
-            <em>L<span class="text-success">Hacha</span>S</em>
+            <img class="navbar-brand-img" src="assets/images/icons/boy.png" alt="Developer">
+            <div>L<span class="text-success">Hacha</span>S</div>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
@@ -15,15 +15,19 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mx-auto" id="navbar-navlist">
                 <li class="nav-item" [ngClass]="{'active':currentSection === 'home'}">
+                    <i class="nav-icon icofont icofont-ui-home"></i>
                     <a [ngxScrollTo]="'#home'" class="nav-link" href="javascript: void(0);">Inicio</a>
                 </li>
                 <li class="nav-item" [ngClass]="{'active':currentSection === 'about'}">
+                    <i class="nav-icon icofont icofont-man-in-glasses"></i>
                     <a [ngxScrollTo]="'#about'" class="nav-link" href="javascript: void(0);">Sobre Mi</a>
                 </li>
                 <li class="nav-item" [ngClass]="{'active':currentSection === 'skills'}">
+                    <i class="nav-icon icofont icofont-tools-bag"></i>
                     <a [ngxScrollTo]="'#skills'" class="nav-link" href="javascript: void(0);">Mis Habilidades</a>
                 </li>
                 <li class="nav-item" [ngClass]="{'active':currentSection === 'services'}">
+                    <i class="nav-icon icofont icofont-responsive"></i>
                     <a [ngxScrollTo]="'#services'" class="nav-link" href="javascript: void(0);">Servicios</a>
                 </li>
                 <!-- <li class="nav-item" [ngClass]="{'active':currentSection === 'testi'}">
@@ -36,6 +40,7 @@
                     <a [ngxScrollTo]="'#faq'" class="nav-link" href="javascript: void(0);">FAQ</a>
                 </li> -->
                 <li class="nav-item" [ngClass]="{'active':currentSection === 'contact'}">
+                    <i class="nav-icon icofont icofont-live-support"></i>
                     <a [ngxScrollTo]="'#contact'" class="nav-link" href="javascript: void(0);">Contacto</a>
                 </li>
             </ul>

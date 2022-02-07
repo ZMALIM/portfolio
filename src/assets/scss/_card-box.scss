@@ -1,8 +1,8 @@
 //
-// services.scss
+// card.scss
 //
 
-.services-box {
+.card-box {
     text-align: center;
     padding: 40px 20px;
     margin: 15px 0;
@@ -29,7 +29,7 @@
         }
     }
 
-    .services-icon {
+    .card-icon {
         // i {
         //     font-size: 36px;
         // }
@@ -64,7 +64,7 @@
             }
         }
     }
-    .services-title {
+    .card-title {
         font-size: 18px;
     }
 }
