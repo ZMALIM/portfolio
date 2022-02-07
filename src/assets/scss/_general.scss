@@ -3,9 +3,11 @@
 //
 
 body {
-  font-family: "Victor Mono", monospace;
-  overflow-x: hidden !important;
-  position: relative;
+    font-family: 'Victor Mono', monospace;
+    overflow-x: hidden !important;
+    position: relative;
+    letter-spacing: -0.5pt;
+
 }
 
 h1,
@@ -14,29 +16,33 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Victor Mono", monospace;
-//   font-style: oblique;
-  text-decoration: none;
-//   font-variant-ligatures: common-ligatures;
+    font-family:  'Victor Mono', monospace;
+    //   font-style: oblique;
+    text-decoration: none;
+    //   font-variant-ligatures: common-ligatures;
+}
+
+.navbar-brand {
+    font-family: Oswald, sans-serif;
 }
 
 .btn,
 .btn:focus,
 button,
 button:focus {
-  outline: none !important;
+    outline: none !important;
 }
 
 a {
-  text-decoration: none !important;
-  outline: none;
+    text-decoration: none !important;
+    outline: none;
 }
 
 p {
-  font-size: 14.4px;
-  line-height: 24px;
+    font-size: 14.4px;
+    line-height: 24px;
 }
 
 .row > * {
-  position: relative;
+    position: relative;
 }

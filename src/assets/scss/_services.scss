@@ -4,7 +4,7 @@
 
 .services-box {
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
     margin: 15px 0;
     // background: #fff;
     border-radius: 10px;
@@ -12,8 +12,8 @@
     &:hover {
         // background: #f5f5f5;
         // border: 2px solid;
-        // border-bottom-color: #FFDD1B;
-        // border-top-color: #FFDD1B;
+        // border-bottom-color: #cdb30c;
+        // border-top-color: #cdb30c;
         // border-left: none;
         // border-right: none;
 
@@ -22,7 +22,7 @@
                 color: #fff;
             }
             .icon::after {
-                background: #FFDD1B;
+                background: #cdb30c;
                 -webkit-transform: rotate(0deg);
                 transform: rotate(0deg);
             }
@@ -36,7 +36,7 @@
 
         .icon {
             display: inline-block;
-            color: #FFDD1B;
+            color: #cdb30c;
             font-size: 45px;
             width: 85px;
             height: 85px;

@@ -9,6 +9,7 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
 
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { SkillsComponent } from './skills/skills.component';
 import { ServicesComponent } from './services/services.component';
 import { ClientComponent } from './client/client.component';
 import { TeamComponent } from './team/team.component';
@@ -24,6 +25,7 @@ import { ScrollspyDirective } from './scrollspy.directive';
     declarations: [
         HomeComponent,
         AboutComponent,
+        SkillsComponent,
         ServicesComponent,
         ClientComponent,
         TeamComponent,
@@ -47,6 +49,7 @@ import { ScrollspyDirective } from './scrollspy.directive';
     exports: [
         HomeComponent,
         AboutComponent,
+        SkillsComponent,
         ServicesComponent,
         ClientComponent,
         TeamComponent,
