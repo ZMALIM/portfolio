@@ -25,8 +25,7 @@
 
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Mulish:wght@400;600;700&display=swap"); */
 
-@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Oswald:wght@300;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Mali:ital,wght@1,300&family=Oswald:wght@300;600&family=Patrick+Hand&display=swap');
 @font-face {
     font-family: "Victor Mono";
     src: url("../fonts/victor-mono/victor-mono-regular.ttf") format("truetype");

@@ -1,7 +1,28 @@
+@keyframes load {
+    from {
+        width: 0%;
+    }
+}
+@-webkit-keyframes load {
+    from {
+        width: 0%;
+    }
+}
+@-moz-keyframes load {
+    from {
+        width: 0%;
+    }
+}
+@-o-keyframes load {
+    from {
+        width: 0%;
+    }
+}
+
 .skills {
     padding: 10px 0;
 
-    .skill-text  {
+    .skill-text {
         display: flex;
         font-size: 12px;
         font-weight: 400;
@@ -31,6 +52,10 @@
             background-color: #cdb30c;
             -webkit-transition: all 1.5s;
             transition: all 1.5s;
+            animation: load 2s 0s;
+            -webkit-animation: load 2s 0s;
+            -moz-animation: load 2s 0s;
+            -o-animation: load 2s 0s;
         }
 
         .progres:after {
