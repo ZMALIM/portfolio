@@ -1,6 +1,6 @@
-/*  Theme Name: Globing | Responsive Bootstrap Landing Template
-    Author: Themesbrand
-    Version: 2.0.0
+/*  Theme Name: Resposive
+    Author: LHachaS
+    Version: 1.0.0
     File Description: Main CSS file of the template
 */
 
@@ -50,7 +50,7 @@
     opacity: 1;
 }
 
-.home-carousel .owl-theme .owl-dots .owl-dot span {    
+.home-carousel .owl-theme .owl-dots .owl-dot span {
     background-color: #ff546c !important;
     opacity: .5;
     width: 11px;
@@ -63,4 +63,4 @@
   background:  #ff546c !important;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-} 
+}

@@ -1,3 +1,9 @@
+/*  Theme Name: Resposive
+    Author: LHachaS
+    Version: 1.0.0
+    File Description: Main CSS file of the template
+*/
+
 body {
     color: #FFE4E1;
 }
@@ -47,6 +53,10 @@ h3, h4, h5 {
 
 .skill-tec {
     color: #FFE4E1 !important;
+}
+
+.card-box {
+    box-shadow: none !important;
 }
 
 
