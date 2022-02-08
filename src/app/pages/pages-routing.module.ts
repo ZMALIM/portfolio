@@ -9,11 +9,11 @@ import { SignupComponent } from './signup/signup.component';
 const routes: Routes = [
     {
         path: '',
-        redirectTo: 'portfolio',
+        redirectTo: 'cv',
         pathMatch: 'full'
     },
     {
-        path: 'portfolio',
+        path: 'cv',
         component: MainComponent
     },
     {

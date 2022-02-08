@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollToOffsetMap } from '@nicky-lenaers/ngx-scroll-to';
 
 @Component({
     selector: 'app-main',
@@ -7,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
     currentSection = 'home';
+    ngxScrollToOffsetMap: ScrollToOffsetMap;
 
     ngOnInit(): void {
+        this.ngxScrollToOffsetMap = new Map();
+        this.ngxScrollToOffsetMap
+          .set(480, 100)
+          .set(768, 200)
+          .set(1240, 300)
+          .set(1920, 400);
     }
 
     /**

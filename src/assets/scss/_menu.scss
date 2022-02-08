@@ -40,17 +40,6 @@
 
     .navbar-nav {
         margin-left: 50px;
-        li {
-            a {
-                color: rgba($white, 0.5);
-                font-size: 14px;
-                text-transform: uppercase;
-                transition: all 0.5s;
-                background-color: transparent !important;
-                margin: 0 7px;
-                letter-spacing: 0.05em;
-            }
-        }
 
         .nav-item {
             display: block;
@@ -65,11 +54,21 @@
                 align-items: center;
             }
 
+            .nav-link {
+                color: rgba($white, 0.5);
+                font-size: 14px;
+                text-transform: uppercase;
+                transition: all 0.5s;
+                background-color: transparent !important;
+                margin: 0 7px;
+                letter-spacing: 0.05em;
+            }
+
             &:hover,
             &.active {
                 background: #cdb30c;
 
-                a {
+                .nav-link {
                     color: $white;
                 }
 
