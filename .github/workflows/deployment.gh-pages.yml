@@ -19,7 +19,7 @@ jobs:
           cache: npm
 
       - name: Install
-        run: npm ci
+        run: npm i --legacy-peer-deps
 
     #   - name: Test
     #     run: npm run test -- --watch=false --browsers=ChromeHeadless
