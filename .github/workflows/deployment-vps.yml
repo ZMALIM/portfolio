@@ -30,13 +30,12 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: copy file via ssh key
-      uses: appleboy/scp-action@master
-      env:
-        HOST: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}
+      uses: appleboy/scp-action@v0.1.4
       with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        port: ${{ secrets.PORT }}
+        key: ${{ secrets.SSHKEY }}
         rm: true
         source: dist/portfolio
         target: "/var/www/html/portfolio"
