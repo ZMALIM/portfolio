@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { NgxTypedJsModule } from 'ngx-typed-js';
-import { NgParticlesModule } from 'ng-particles';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { PagesRoutingModule } from './pages-routing.module'
@@ -27,7 +26,6 @@ import { SignupComponent } from './signup/signup.component';
         PagesRoutingModule,
         ScrollToModule.forRoot(),
         NgxTypedJsModule,
-        NgParticlesModule,
         CarouselModule
     ]
 })
