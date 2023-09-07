@@ -17,7 +17,7 @@ export class ThemeSwitcherComponent {
     }
 
     toggleSwitcher() {
-        console.log(this.isDarkMode);
+        // console.log(this.isDarkMode);
         this.isDarkMode = this.themeService.isDarkMode();
         this.isDarkMode
             ? this.themeService.update('light')

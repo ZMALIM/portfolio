@@ -39,6 +39,11 @@ body {
     color: #FFE4E1 !important;
 }
 
+input::placeholder,
+textarea::placeholder {
+    color: rgb(110, 106, 106) !important;
+}
+
 h3, h4, h5 {
     color: #cdb30c!important;
 }
