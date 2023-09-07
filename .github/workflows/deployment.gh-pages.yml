@@ -34,9 +34,20 @@ jobs:
     #     run: npm run test -- --watch=false --browsers=ChromeHeadless
 
       - name: Build
-        run: |
-          npm run build -- -c production --base-href "https://lhachas.github.io/portfolio/"
-          npm run build --prod
+        run: npm run build -- -c production --base-href "https://lhachas.github.io/portfolio/"
+
+      - name: Copy file via ssh key
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.SSHKEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          rm: true
+          source: dist/portfolio
+          target: "/var/www/html/portfolio"
+          strip_components: 2
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
@@ -58,16 +69,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-
-      - name: Deploy to Oracle VPS
-        uses: appleboy/scp-action@v0.1.4
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          port: ${{ secrets.PORT }}
-          key: ${{ secrets.SSHKEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-          rm: true
-          source: dist/portfolio
-          target: "/var/www/html/portfolio"
-          strip_components: 2
