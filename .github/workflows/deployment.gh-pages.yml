@@ -34,7 +34,9 @@ jobs:
     #     run: npm run test -- --watch=false --browsers=ChromeHeadless
 
       - name: Build
-        run: npm run build -- -c production --base-href "https://lhachas.github.io/portfolio/"
+        run: |
+          npm run build -- -c production --base-href "https://lhachas.github.io/portfolio/"
+          npm run build --prod
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
