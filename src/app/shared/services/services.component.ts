@@ -19,25 +19,24 @@ export class ServicesComponent implements OnInit {
     servicesData = [
         {
             icon: 'icofont-paint',
-            title: 'Diseño web',
-            description: `Conocer las tendencias y estándares
-            relacionados con los sitios web actuales tomando
-            en cuenta los estándares de HTML5, CSS3 y Sitios Web.`
+            title: 'Diseño Web Innovador',
+            description: `Exploro y aplico constantemente las últimas tendencias y
+            estándares en el diseño web, incorporando de manera experta las especificaciones
+            de HTML5 y CSS3, para crear experiencias de usuario modernas y atractivas en sitios web actuales.`
         },
         {
             icon: 'icofont-code',
-            title: 'Desarrollo web',
-            description: `Desarrollo de aplicaciones a medida,
-            aplicando las últimas tendencias y estándares relacionadas
-            con la tecnología web y diseño.`
+            title: 'Desarrollo Web',
+            description: `Diseño, desarrollo y optimización de aplicaciones y sistemas a medida,
+            utilizando un amplio espectro de tecnologías y lenguajes de programación de última
+            generación para lograr resultados excepcionales en una variedad de proyectos tecnológicos.`
         },
         {
             icon: 'icofont-automation',
-            title: 'Mantenimiento web',
-            description: `Asegurar y
-            gestionar el correcto funcionamiento de los sitios web
-            en dispositivos móviles, tablets y pantallas computadoras
-            personales.`
+            title: 'DevOps para Entrega Continua',
+            description: `Ofrezco experiencia en DevOps para optimizar tus flujos de desarrollo y
+            garantizar la entrega continua de aplicaciones y sistemas. Implementando prácticas y
+            herramientas avanzadas,  aseguro una gestión eficiente en la entrega de aplicaciones y sistemas.`
         },
     ]
 

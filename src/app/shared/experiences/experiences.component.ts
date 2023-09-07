@@ -18,6 +18,15 @@ export class ExperiencesComponent implements OnInit {
 
     experiences = [
         {
+            title: 'Desarrollador Back-end',
+            company: 'Cencosud',
+            date: '07/02/2022  31/08/2023',
+            location: 'Lima - Perú',
+            description: `
+                ● Mi enfoque principal consistió en contribuir al diseño, desarrollo y mantenimiento de nuevos componentes y módulos en los proyectos clave del equipo. Entre los logros destacados se incluyen la implementación exitosa de funcionalidades esenciales en proyectos como "Emisión y Devolución de Órdenes de Pedido", "Reagendamientos" y "Estados de Órdenes de Pedido" relacionados con la gestión de entregas.
+            `,
+        },
+        {
             title: 'Desarrollador Back-end NodeJS',
             company: 'Payqa Soluciones S.A.C.',
             date: '02/08/2021  10/12/2021',
