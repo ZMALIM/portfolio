@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ScrollToOffsetMap } from '@nicky-lenaers/ngx-scroll-to';
+import { ScrollToOffsetMap, ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
 
 @Component({
     selector: 'app-main',
@@ -7,10 +7,46 @@ import { ScrollToOffsetMap } from '@nicky-lenaers/ngx-scroll-to';
     styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-    currentSection = 'home';
-    ngxScrollToOffsetMap: ScrollToOffsetMap;
+    public currentSection: string;
+    public ngxScrollToOffsetMap: ScrollToOffsetMap;
+    public items: any[];
+
+    constructor(private scrollToService: ScrollToService) { }
 
     ngOnInit(): void {
+        this.items = [
+            {
+                id: 'home',
+                icon: 'icofont-ui-home',
+                label: 'Inicio',
+            },
+            {
+                id: 'about',
+                icon: 'icofont-man-in-glasses',
+                label: 'Sobre Mi',
+            },
+            {
+                id: 'skills',
+                icon: 'icofont-certificate-alt-1',
+                label: 'Mis Habilidades',
+            },
+            {
+                id: 'experiences',
+                icon: 'icofont-architecture-alt',
+                label: 'Mis Experiencias',
+            },
+            {
+                id: 'services',
+                icon: 'icofont-responsive',
+                label: 'Servicios',
+            },
+            {
+                id: 'contact',
+                icon: 'icofont-support',
+                label: 'Contacto',
+            }
+        ];
+        this.currentSection = this.items[0]?.id;
         this.ngxScrollToOffsetMap = new Map();
         this.ngxScrollToOffsetMap
           .set(480, 100)
@@ -46,6 +82,7 @@ export class MainComponent implements OnInit {
      * @param sectionId specify the current sectionID
      */
     onSectionChange(sectionId: string) {
+        console.log('SECTION ID: ', sectionId);
         this.currentSection = sectionId;
     }
 }

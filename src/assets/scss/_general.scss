@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
 
 body {
-    font-family: 'Patrick Hand', monospace;
+    font-family: Oswald, 'Patrick Hand', monospace;
+    font-weight: 300;
     overflow-x: hidden !important;
     position: relative;
     letter-spacing: -0.5pt;
@@ -12,15 +14,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-family:  'Patrick Hand', monospace;
-    //   font-style: oblique;
     text-decoration: none;
-    //   font-variant-ligatures: common-ligatures;
+    font-weight: 300;
 }
 
-// .navbar-brand {
-//     font-family: 'Oswald', sans-serif;
-// }
+.navbar-brand {
+    font-weight: 700;
+}
 
 .btn,
 .btn:focus,

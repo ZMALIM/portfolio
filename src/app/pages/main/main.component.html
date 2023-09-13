@@ -13,53 +13,25 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mx-auto" id="navbar-navlist">
+            <ul class="navbar-nav mx-auto" id="navbar-navlist" *ngFor="let item of items">
                 <li class="nav-item"
-                    [ngClass]="{'active':currentSection === 'home'}"
-                    [ngxScrollTo]="'#home'">
-                    <i class="nav-icon icofont icofont-ui-home"></i>
-                    <span class="nav-link">Inicio</span>
-                </li>
-                <li class="nav-item"
-                    [ngClass]="{'active':currentSection === 'about'}"
-                    [ngxScrollTo]="'#about'">
-                    <i class="nav-icon icofont icofont-man-in-glasses"></i>
-                    <span class="nav-link">Sobre Mi</span>
-                </li>
-                <li class="nav-item"
-                    [ngClass]="{'active':currentSection === 'skills'}"
-                    [ngxScrollTo]="'#skills'">
-                    <i class="nav-icon icofont icofont-certificate-alt-1"></i>
-                    <span class="nav-link">Mis Habilidades</span>
-                </li>
-                <li class="nav-item"
-                    [ngClass]="{'active':currentSection === 'experiences'}"
-                    [ngxScrollTo]="'#experiences'">
-                    <i class="nav-icon icofont icofont-architecture-alt"></i>
-                    <span class="nav-link">Mis Experiencias</span>
-                </li>
-                <li class="nav-item"
-                    [ngClass]="{'active':currentSection === 'services'}"
-                    [ngxScrollTo]="'#services'">
-                    <i class="nav-icon icofont icofont-responsive"></i>
-                    <span class="nav-link">Servicios</span>
-                </li>
-                <li class="nav-item"
-                    [ngClass]="{'active':currentSection === 'contact'}"
-                    [ngxScrollTo]="'#contact'">
-                    <i class="nav-icon icofont icofont-support"></i>
-                    <span class="nav-link">Contacto</span>
+                    [ngClass]="{'active':currentSection === item.id}"
+                    [ngxScrollTo]="item.id"
+                    [ngxScrollToEasing]="'easeOutElastic'"
+                    [ngxScrollToOffset]="'5'">
+                    <i class="nav-icon icofont {{item.icon}}"></i>
+                    <span class="nav-link">{{item.label}}</span>
                 </li>
             </ul>
             <div class="row aux">
                 <div class="col-10 phone fx-center">
-                    <!-- <ul class="text-right list-unstyled list-inline mb-0 nav-social">
+                    <ul class="text-right list-unstyled list-inline mb-0 nav-social">
                         <li class="list-inline-item text-white nav-number">
                             <i class="icofont icofont-ui-cell-phone text-success"></i>
-                            <span> +51 959 034 122</span>
+                            <span>+51 959 034 122</span>
                         </li>
-                        <li class="list-inline-item"><a href="" class="facebook"><i class="ti-facebook"></i></a></li>
-                    </ul> -->
+                        <!-- <li class="list-inline-item"><a href="" class="facebook"><i class="ti-facebook"></i></a></li> -->
+                    </ul>
                 </div>
                 <div class="col-2 fx-center">
                     <theme-switcher></theme-switcher>
@@ -70,6 +42,7 @@
 </nav>
 <!-- END NAVBAR -->
 
+<!-- APP -->
 <div appScrollspy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
     <app-home></app-home>
     <app-about></app-about>
@@ -77,6 +50,13 @@
     <app-experiences></app-experiences>
     <app-services></app-services>
     <app-contact></app-contact>
-    <app-footer></app-footer>
-    <app-switcher></app-switcher>
 </div>
+<!-- / APP -->
+
+<!-- FOOTER -->
+<app-footer></app-footer>
+<!-- / FOOTER -->
+
+<!-- APP-SWITCHER -->
+<app-switcher></app-switcher>
+<!-- / APP-SWITCHER  -->
